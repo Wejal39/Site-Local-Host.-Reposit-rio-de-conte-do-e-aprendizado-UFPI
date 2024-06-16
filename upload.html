@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Conteúdo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Upload de Conteúdo</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Enviar Novo Conteúdo</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required><br><br>
+            <label for="materia">Matéria:</label>
+            <input type="text" id="materia" name="materia" required><br><br>
+            <label for="metodo">Método:</label>
+            <select id="metodo" name="metodo" required>
+                <option value="cornell">Método de Cornell/Sintético</option>
+                <option value="feynman">Método de Feynman/Analítico</option>
+            </select><br><br>
+            
+            <div id="cornellFields" style="display:none;">
+                <label for="topicos">Tópicos mais importantes:</label>
+                <textarea id="topicos" name="topicos"></textarea><br><br>
+                <label for="anotacoes">Anotações gerais:</label>
+                <textarea id="anotacoes" name="anotacoes"></textarea><br><br>
+                <label for="resumo">Resumo:</label>
+                <textarea id="resumo" name="resumo"></textarea><br><br>
+            </div>
+
+            <div id="feynmanFields" style="display:none;">
+                <label for="conceitos">Conceitos:</label>
+                <textarea id="conceitos" name="conceitos"></textarea><br><br>
+                <label for="explicacao">Explicação do conceito em termos simples:</label>
+                <textarea id="explicacao" name="explicacao"></textarea><br><br>
+                <label for="lacunas">Identificação de lacunas e revisão:</label>
+                <textarea id="lacunas" name="lacunas"></textarea><br><br>
+                <label for="simplificacao">Simplificação e nova revisão:</label>
+                <textarea id="simplificacao" name="simplificacao"></textarea><br><br>
+            </div>
+
+            <label for="imagem">Imagem:</label>
+            <input type="file" id="imagem" name="imagem"><br><br>
+            <input type="submit" value="Upload">
+        </form>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

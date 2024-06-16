@@ -1,0 +1,43 @@
+/* Estilização básica do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilo dos links de navegação */
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilo dos itens de conteúdo */
+.conteudo-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.conteudo-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para os campos de conteúdo */
+#cornellFields, #feynmanFields {
+    margin-bottom: 20px;
+}
